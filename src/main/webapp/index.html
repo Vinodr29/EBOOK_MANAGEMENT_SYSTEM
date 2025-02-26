@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #77b9c9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background-color: #989e95;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+        }
+        h1 {
+            color: #0408db;
+        }
+        input[type="text"], input[type="number"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        input[type="submit"], button {
+            width: 48%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+        button {
+            background-color: #dc3545;
+            color: white;
+        }
+        button:hover {
+            background-color: #c82333;
+        }
+
+        /* Style for anchor button */
+        .booklist-link {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .booklist-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Book Registration</h1>
+        <form action="registrationbook" method="post">
+            <input type="text" name="bookName" placeholder="Enter Book Name" required />
+            <input type="text" name="bookEdition" placeholder="Enter Book Edition" required />
+            <input type="text" name="bookPrice" placeholder="Enter Book Price" required />
+            
+            <div class="button-container">
+                <input type="submit" value="REGISTER" />
+                <button type="reset">CANCEL</button>
+            </div>
+
+        </form>
+
+        <!-- Styled anchor tag for "BOOKLIST" -->
+        <a href="BookList" class="booklist-link">VIEW BOOK LIST</a>
+
+    </div>
+
+</body>
+</html>
