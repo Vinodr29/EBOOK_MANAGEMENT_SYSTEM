@@ -75,8 +75,8 @@ CREATE TABLE ebooks (
 );
 
 ##### 4. Deploy the Application**
-#Change the names of the Database and Table in the code where ever necessary.
+Change the names of the Database and Table in the code where ever necessary.
 
 ##### 3. Deploy the Application**
-# Deploy the project on Apache Tomcat
-# You can either run it through your IDE or manually deploy the WAR file to Tomcat.
+ Deploy the project on Apache Tomcat
+ You can either run it through your IDE or manually deploy the WAR file to Tomcat.
